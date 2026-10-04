@@ -2,6 +2,9 @@
 
 A real-time weather dashboard built using HTML, CSS, and JavaScript.
 
+## 🌐 Live Demo
+Check out the live application here: [Weather Dashboard](https://sadhana-0726.github.io/Weather-Dashboard/)
+
 ## Features
 
 * Search weather by city name
