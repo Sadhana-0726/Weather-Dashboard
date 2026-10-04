@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Real-time weather dashboard using JavaScript Fetch API">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>Weather Dashboard</h1>
+            <p>Check real-time weather information for any city</p>
+        </header>
+
+        <section class="search-section">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+                aria-label="Enter city name"
+            >
+
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <p id="errorMessage" class="error"></p>
+
+        <section id="weatherCard" class="weather-card hidden">
+
+            <div class="location">
+                <h2 id="cityName">City</h2>
+                <p id="countryName">Country</p>
+            </div>
+
+            <div class="temperature">
+                <span id="temperature">--</span>°C
+            </div>
+
+            <p id="weatherDescription" class="description">
+                Weather information
+            </p>
+
+            <div class="weather-details">
+
+                <div class="detail-card">
+                    <span class="icon">💧</span>
+                    <h3>Humidity</h3>
+                    <p><span id="humidity">--</span>%</p>
+                </div>
+
+                <div class="detail-card">
+                    <span class="icon">💨</span>
+                    <h3>Wind Speed</h3>
+                    <p><span id="windSpeed">--</span> km/h</p>
+                </div>
+
+                <div class="detail-card">
+                    <span class="icon">🌡️</span>
+                    <h3>Feels Like</h3>
+                    <p><span id="feelsLike">--</span>°C</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="loading" class="loading hidden">
+            Loading weather data...
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
